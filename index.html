@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Tarefas</h1>
+        <div class="task-input">
+          <input type="text" id="taskName" placeholder="Nome da tarefa" />
+          <input type="number" id="taskCost" placeholder="Custo (R$)" min="0" step="0.01" />
+          <input type="date" id="taskDeadline" placeholder="Data limite" />
+          <button onclick="addTask()">Inserir</button>
+        </div>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>Ordem</th>
+              <th>Nome da Tarefa</th>
+              <th>Custo (R$)</th>
+              <th>Data Limite</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="taskList">
+            <!-- As tarefas serão adicionadas aqui dinamicamente -->
+          </tbody>
+        </table>
+    
+        <div class="pagination" id="pagination"></div>
+      <script src="script.js"></script>    
+</body>
+</html>
