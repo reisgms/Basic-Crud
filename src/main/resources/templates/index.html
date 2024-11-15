@@ -21,7 +21,11 @@
             </tr>
           </thead>
           <tbody id="taskList">
-            <!-- As tarefas serão adicionadas aqui dinamicamente -->
+          <tr th:each="tarefa : ${tarefas}">
+                <td th:text="${tarefas.idtarefa}"></td>
+                <td th:text="${tarefas.tarefa}"></td>
+                <td th:text="${tarefas.custo}"></td>
+                <td th:text="${#datess.format(tarefa.datalimite, 'dd/MM/yyyy')}"></td>
           </tbody>
         </table>
           <div class="col-12">

@@ -9,7 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages= {
 		"com.tasklist.controller",
 		"com.tasklist.model",
-		"com.tasklist.config"
+		"com.tasklist.config",
+		"com.tasklist.repository",
+		"com.tasklist.services"
 })
 public class TaskListApplication {
 
